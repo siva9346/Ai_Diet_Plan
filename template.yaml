@@ -1,25 +1,30 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
+Description: >
+  SAM Template for FastAPI app running on AWS Lambda + API Gateway (HTTP)
+
+Globals:
+  Function:
+    Timeout: 30
+    Runtime: python3.10
+    MemorySize: 512
+    Architectures:
+      - x86_64
+    Environment:
+      Variables:
+        PYTHONPATH: /var/task
 
 Resources:
   FastAPIFunction:
     Type: AWS::Serverless::Function
     Properties:
       FunctionName: fastapi-fitness-app
-      Handler: app.lambda_handler  # Points to app.py -> lambda_handler()
-      Runtime: python3.10
-      CodeUri: .                   # root folder (contains app.py)
-      MemorySize: 256
-      Timeout: 30
+      CodeUri: .
+      Handler: app.lambda_handler    # from app.py
       Policies:
         - AWSLambdaBasicExecutionRole
       Events:
-        RootApiEvent:
-          Type: HttpApi
-          Properties:
-            Path: /
-            Method: ANY
-        ProxyApiEvent:
+        ApiGatewayEvent:
           Type: HttpApi
           Properties:
             Path: /{proxy+}
@@ -27,6 +32,6 @@ Resources:
 
 Outputs:
   ApiUrl:
-    Description: "API Gateway endpoint URL"
+    Description: "API Gateway endpoint URL for FastAPI function"
     Value:
-      Fn::Sub: "https://${FastAPIFunction.HttpApiId}.execute-api.${AWS::Region}.amazonaws.com/"
+      Fn::Sub: "https://${ServerlessHttpApi}.execute-api.${AWS::Region}.amazonaws.com/"
