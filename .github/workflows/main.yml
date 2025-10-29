@@ -41,4 +41,6 @@ jobs:
                    --stack-name fastapi-fitness-app \
                    --capabilities CAPABILITY_IAM \
                    --region ap-south-1 \
-                   --resolve-s3
+                   --s3-bucket siva-s4-buckets
+
+               
