@@ -4,15 +4,15 @@ A comprehensive FastAPI application that leverages Google Gemini AI to generate 
 
 ## Features
 
-- 🍽️ **Personalized Diet Plan Generation**: Create custom 7-day diet plans based on user parameters
-- 📊 **Nutrition Analysis**: Get detailed nutritional breakdown including calories and macros
-- 🤖 **AI-Powered**: Uses Google Gemini AI for intelligent meal planning and analysis
-- 🎯 **Health-Aware**: Considers health conditions, allergies, and dietary preferences
-- 🌍 **Regional Cuisine Support**: Generates plans based on regional food preferences
+-  **Personalized Diet Plan Generation**: Create custom 7-day diet plans based on user parameters
+-  **Nutrition Analysis**: Get detailed nutritional breakdown including calories and macros
+-  **AI-Powered**: Uses Google Gemini AI for intelligent meal planning and analysis
+-  **Health-Aware**: Considers health conditions, allergies, and dietary preferences
+-  **Regional Cuisine Support**: Generates plans based on regional food preferences
 
 ## Tech Stack
 
-- **Python 3.10+**
+- **Python 3.11+**
 - **FastAPI** - Modern, fast web framework
 - **Google Gemini AI** - AI-powered meal planning and analysis
 - **Pydantic** - Data validation
@@ -207,25 +207,6 @@ curl -X POST "http://localhost:8000/nutrition_breakdown" \
 - `GET /` - Root endpoint with API information
 - `GET /health` - Health check endpoint
 
-## Using the Interactive API Documentation
-
-FastAPI provides automatic interactive documentation:
-
-1. Visit http://localhost:8000/docs for Swagger UI
-2. Visit http://localhost:8000/redoc for ReDoc
-
-You can test the APIs directly from these pages without writing any code.
-
-## Project Structure
-
-```
-.
-├── app.py                 # Main FastAPI application
-├── requirements.txt       # Python dependencies
-├── README.md             # This file
-├── .env                  # Environment variables (create this)
-└── venv/                 # Virtual environment (after setup)
-```
 
 ## Error Handling
 
@@ -256,39 +237,8 @@ The API includes comprehensive error handling:
 3. **Regional Cuisine**: Specify the region for culturally appropriate meal suggestions
 4. **Allergies**: Always list allergies to avoid unsafe recommendations
 
-## Troubleshooting
 
-### API Key Not Found
-```
-Error: GOOGLE_API_KEY environment variable is required
-```
-**Solution:** Ensure your `.env` file exists and contains the correct API key.
-
-### Import Errors
-```
-ModuleNotFoundError: No module named 'fastapi'
-```
-**Solution:** Activate your virtual environment and install dependencies:
-```bash
-pip install -r requirements.txt
-```
-
-### Port Already in Use
-```
-Error: [Errno 48] Address already in use
-```
-**Solution:** Change the port in `app.py` or stop the service using port 8000.
-
-## License
-
-This project is provided as-is for educational and development purposes.
-
-## Support
-
-For issues related to:
-- **FastAPI**: Visit [FastAPI Documentation](https://fastapi.tiangolo.com/)
-- **Google Gemini**: Visit [Google AI Studio](https://makersuite.google.com/app/apikey)
 
 ---
 
-**Built with ❤️ using FastAPI and Google Gemini AI**
+
