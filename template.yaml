@@ -5,9 +5,10 @@ Resources:
   FastAPIFunction:
     Type: AWS::Serverless::Function
     Properties:
-      Handler: lambda_handler.handler
+      FunctionName: fastapi-fitness-app
+      Handler: app.lambda_handler  # Points to app.py -> lambda_handler()
       Runtime: python3.10
-      CodeUri: ./app
+      CodeUri: .                   # root folder (contains app.py)
       MemorySize: 256
       Timeout: 30
       Policies:
