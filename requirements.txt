@@ -5,3 +5,4 @@ python-dotenv==1.0.0
 pydantic==2.5.2
 pydantic-core==2.14.5
 requests==2.31.0
+mangum
