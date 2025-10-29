@@ -7,6 +7,7 @@ from fastapi.responses import JSONResponse
 from pydantic import BaseModel, Field
 import google.generativeai as genai
 from dotenv import load_dotenv
+from mangum import Mangum
 
 # Configure logging
 logging.basicConfig(
@@ -375,7 +376,8 @@ async def nutrition_breakdown(request: NutritionRequest):
 
 
 # Run the application
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+# if __name__ == "__main__":
+#     import uvicorn
+#     uvicorn.run(app, host="0.0.0.0", port=8000)
+handler = Mangum(app)
 
