@@ -29,7 +29,6 @@ jobs:
 
     - name: Install dependencies
       run: |
-        cd app
         pip install -r requirements.txt -t .
 
     - name: SAM Build
@@ -43,4 +42,3 @@ jobs:
                    --capabilities CAPABILITY_IAM \
                    --region ap-south-1 \
                    --resolve-s3
-    
