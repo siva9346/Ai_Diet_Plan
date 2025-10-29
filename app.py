@@ -1,13 +1,3 @@
-"""
-AI-Based Diet Plan Recommendation & Nutrition Breakdown API
-
-This FastAPI application provides two main endpoints:
-1. /generate_diet_plan - Generates personalized 7-day diet plans
-2. /nutrition_breakdown - Analyzes nutritional content of food items
-
-Both endpoints use Google Gemini AI for intelligent meal planning and analysis.
-"""
-
 import os
 import json
 import logging
@@ -388,3 +378,4 @@ async def nutrition_breakdown(request: NutritionRequest):
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
+
