@@ -1,9 +1,30 @@
-services:
-  - type: web
-    name: ai-diet-plan
-    env: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
-    envVars:
-      - key: GOOGLE_API_KEY
-        sync: false
+
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+
+Resources:
+  FastAPIFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: main.handler
+      Runtime: python3.12
+      CodeUri: ./app
+      MemorySize: 256
+      Timeout: 30
+      Events:
+        RootApiEvent:
+          Type: HttpApi
+          Properties:
+            Path: /
+            Method: ANY
+        ProxyApiEvent:
+          Type: HttpApi
+          Properties:
+            Path: /{proxy+}
+            Method: ANY
+
+Outputs:
+  ApiUrl:
+    Description: "API Gateway endpoint URL"
+    Value:
+      Fn::Sub: "https://${ServerlessHttpApi}.execute-api.${AWS::Region}.amazonaws.com/"
