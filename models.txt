@@ -1,0 +1,132 @@
+1. models/embedding-gecko-001
+   Supported methods: ['embedText', 'countTextTokens']
+2. models/gemini-2.5-pro-preview-03-25
+   Supported methods: ['generateContent', 'countTokens', 'createCachedContent', 'batchGenerateContent']
+3. models/gemini-2.5-flash-preview-05-20
+   Supported methods: ['generateContent', 'countTokens', 'createCachedContent', 'batchGenerateContent']
+4. models/gemini-2.5-flash
+   Supported methods: ['generateContent', 'countTokens', 'createCachedContent', 'batchGenerateContent']
+5. models/gemini-2.5-flash-lite-preview-06-17
+   Supported methods: ['generateContent', 'countTokens', 'createCachedContent', 'batchGenerateContent']
+6. models/gemini-2.5-pro-preview-05-06
+   Supported methods: ['generateContent', 'countTokens', 'createCachedContent', 'batchGenerateContent']
+7. models/gemini-2.5-pro-preview-06-05
+   Supported methods: ['generateContent', 'countTokens', 'createCachedContent', 'batchGenerateContent']
+8. models/gemini-2.5-pro
+   Supported methods: ['generateContent', 'countTokens', 'createCachedContent', 'batchGenerateContent']
+9. models/gemini-2.0-flash-exp
+   Supported methods: ['generateContent', 'countTokens', 'bidiGenerateContent']
+10. models/gemini-2.0-flash
+   Supported methods: ['generateContent', 'countTokens', 'createCachedContent', 'batchGenerateContent']
+11. models/gemini-2.0-flash-001
+   Supported methods: ['generateContent', 'countTokens', 'createCachedContent', 'batchGenerateContent']
+12. models/gemini-2.0-flash-exp-image-generation
+   Supported methods: ['generateContent', 'countTokens', 'bidiGenerateContent']
+13. models/gemini-2.0-flash-lite-001
+   Supported methods: ['generateContent', 'countTokens', 'createCachedContent', 'batchGenerateContent']
+14. models/gemini-2.0-flash-lite
+   Supported methods: ['generateContent', 'countTokens', 'createCachedContent', 'batchGenerateContent']
+15. models/gemini-2.0-flash-preview-image-generation
+   Supported methods: ['generateContent', 'countTokens', 'batchGenerateContent']
+16. models/gemini-2.0-flash-lite-preview-02-05
+   Supported methods: ['generateContent', 'countTokens', 'createCachedContent', 'batchGenerateContent']
+17. models/gemini-2.0-flash-lite-preview
+   Supported methods: ['generateContent', 'countTokens', 'createCachedContent', 'batchGenerateContent']
+18. models/gemini-2.0-pro-exp
+   Supported methods: ['generateContent', 'countTokens', 'createCachedContent', 'batchGenerateContent']
+19. models/gemini-2.0-pro-exp-02-05
+   Supported methods: ['generateContent', 'countTokens', 'createCachedContent', 'batchGenerateContent']
+20. models/gemini-exp-1206
+   Supported methods: ['generateContent', 'countTokens', 'createCachedContent', 'batchGenerateContent']
+21. models/gemini-2.0-flash-thinking-exp-01-21
+   Supported methods: ['generateContent', 'countTokens', 'createCachedContent', 'batchGenerateContent']
+22. models/gemini-2.0-flash-thinking-exp
+   Supported methods: ['generateContent', 'countTokens', 'createCachedContent', 'batchGenerateContent']
+23. models/gemini-2.0-flash-thinking-exp-1219
+   Supported methods: ['generateContent', 'countTokens', 'createCachedContent', 'batchGenerateContent']
+24. models/gemini-2.5-flash-preview-tts
+   Supported methods: ['countTokens', 'generateContent']
+25. models/gemini-2.5-pro-preview-tts
+   Supported methods: ['countTokens', 'generateContent']
+26. models/learnlm-2.0-flash-experimental
+   Supported methods: ['generateContent', 'countTokens']
+27. models/gemma-3-1b-it
+   Supported methods: ['generateContent', 'countTokens']
+28. models/gemma-3-4b-it
+   Supported methods: ['generateContent', 'countTokens']
+29. models/gemma-3-12b-it
+   Supported methods: ['generateContent', 'countTokens']
+30. models/gemma-3-27b-it
+   Supported methods: ['generateContent', 'countTokens']
+31. models/gemma-3n-e4b-it
+   Supported methods: ['generateContent', 'countTokens']
+32. models/gemma-3n-e2b-it
+   Supported methods: ['generateContent', 'countTokens']
+33. models/gemini-flash-latest
+   Supported methods: ['generateContent', 'countTokens', 'createCachedContent', 'batchGenerateContent']
+34. models/gemini-flash-lite-latest
+   Supported methods: ['generateContent', 'countTokens', 'createCachedContent', 'batchGenerateContent']
+35. models/gemini-pro-latest
+   Supported methods: ['generateContent', 'countTokens', 'createCachedContent', 'batchGenerateContent']
+36. models/gemini-2.5-flash-lite
+   Supported methods: ['generateContent', 'countTokens', 'createCachedContent', 'batchGenerateContent']
+37. models/gemini-2.5-flash-image-preview
+   Supported methods: ['generateContent', 'countTokens', 'batchGenerateContent']
+38. models/gemini-2.5-flash-image
+   Supported methods: ['generateContent', 'countTokens', 'batchGenerateContent']
+39. models/gemini-2.5-flash-preview-09-2025
+   Supported methods: ['generateContent', 'countTokens', 'createCachedContent', 'batchGenerateContent']
+40. models/gemini-2.5-flash-lite-preview-09-2025
+   Supported methods: ['generateContent', 'countTokens', 'createCachedContent', 'batchGenerateContent']
+41. models/gemini-robotics-er-1.5-preview
+   Supported methods: ['generateContent', 'countTokens']
+42. models/gemini-2.5-computer-use-preview-10-2025
+   Supported methods: ['generateContent', 'countTokens']
+43. models/embedding-001
+   Supported methods: ['embedContent']
+44. models/text-embedding-004
+   Supported methods: ['embedContent']
+45. models/gemini-embedding-exp-03-07
+   Supported methods: ['embedContent', 'countTextTokens', 'countTokens']
+46. models/gemini-embedding-exp
+   Supported methods: ['embedContent', 'countTextTokens', 'countTokens']
+47. models/gemini-embedding-001
+   Supported methods: ['embedContent', 'countTextTokens', 'countTokens', 'asyncBatchEmbedContent']
+48. models/aqa
+   Supported methods: ['generateAnswer']
+49. models/imagen-3.0-generate-002
+   Supported methods: ['predict']
+50. models/imagen-4.0-generate-preview-06-06
+   Supported methods: ['predict']
+51. models/imagen-4.0-ultra-generate-preview-06-06
+   Supported methods: ['predict']
+52. models/imagen-4.0-generate-001
+   Supported methods: ['predict']
+53. models/imagen-4.0-ultra-generate-001
+   Supported methods: ['predict']
+54. models/imagen-4.0-fast-generate-001
+   Supported methods: ['predict']
+55. models/veo-2.0-generate-001
+   Supported methods: ['predictLongRunning']
+56. models/veo-3.0-generate-preview
+   Supported methods: ['predictLongRunning']
+57. models/veo-3.0-fast-generate-preview
+   Supported methods: ['predictLongRunning']
+58. models/veo-3.0-generate-001
+   Supported methods: ['predictLongRunning']
+59. models/veo-3.0-fast-generate-001
+   Supported methods: ['predictLongRunning']
+60. models/veo-3.1-generate-preview
+   Supported methods: ['predictLongRunning']
+61. models/veo-3.1-fast-generate-preview
+   Supported methods: ['predictLongRunning']
+62. models/gemini-2.0-flash-live-001
+   Supported methods: ['bidiGenerateContent', 'countTokens']
+63. models/gemini-live-2.5-flash-preview
+   Supported methods: ['bidiGenerateContent', 'countTokens']
+64. models/gemini-2.5-flash-live-preview
+   Supported methods: ['bidiGenerateContent', 'countTokens']
+65. models/gemini-2.5-flash-native-audio-latest
+   Supported methods: ['countTokens', 'bidiGenerateContent']
+66. models/gemini-2.5-flash-native-audio-preview-09-2025
+   Supported methods: ['countTokens', 'bidiGenerateContent']
